@@ -4,7 +4,7 @@ import java.util.List;
 
 interface StudentDAO {
 	
-	List<Student> getAllStudents() throws DAOException;
+	List<Student> getAllStudents();
 	void create (Student student);
 
 }

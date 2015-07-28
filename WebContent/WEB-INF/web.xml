@@ -9,14 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-   <description></description>
-   <display-name>ListStudentServlet</display-name>
-   <servlet-name>ListStudentServlet</servlet-name>
-   <servlet-class>com.project.java.basicmvc1.web.ListStudentServlet</servlet-class>
- </servlet>
- <servlet-mapping>
-   <servlet-name>ListStudentServlet</servlet-name>
-   <url-pattern>/list</url-pattern>
- </servlet-mapping>
+    <description></description>
+    <display-name>ListStudentServlet</display-name>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <servlet-class>com.project.java.basicmvc1.web.ListStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
 </web-app>

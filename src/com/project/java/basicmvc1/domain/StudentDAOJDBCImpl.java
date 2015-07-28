@@ -1,6 +1,7 @@
 package com.project.java.basicmvc1.domain;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,10 +9,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.project.java.basicmvc1.domain.BaseDAO;
+import com.project.java.basicmvc1.domain.DAOException;
+import com.project.java.basicmvc1.domain.Student;
+import com.project.java.basicmvc1.domain.StudentDAO;
+
 class StudentDAOJDBCImpl extends BaseDAO implements StudentDAO {
 
 	@Override
-	public List<Student> getAllStudents() throws DAOException {
+	public List<Student> getAllStudents() {
 		
 		List<Student> students = new ArrayList<Student>();
 		

@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 @SuppressWarnings("serial")
 public class DAOException extends RuntimeException{
-
+	
 	public DAOException(Exception ex, String errorMessage) {
 		super(errorMessage, ex);
 	}
@@ -19,6 +19,16 @@ public class DAOException extends RuntimeException{
 	
 	public DAOException(SQLException ex) {
 		super(ex);
+	}
+
+	public DAOException(Throwable ex)
+	{
+		super(ex);
+	}
+	
+	public DAOException(String errorMessage, Throwable ex)
+	{
+		super(errorMessage, ex);
 	}
 
 }
